@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="https://imgur.com/HlfF23V.jpg" style="height:50%;"><br>
+  <img src="https://imgur.com/a/7nYnD02.jpg"><br>
 </div>
 
 # Roth Peranson Match Algorithm
