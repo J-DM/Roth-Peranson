@@ -1,6 +1,6 @@
 
 <div align="center">
-  <img src="readme_files/match.png)"><br>
+  <img src="Roth-Peranson/readme_files/match.png)"><br>
 </div>
 
 # Roth Peranson Match Algorithm
@@ -19,7 +19,7 @@ pip install pandas
 
 ## Example
 
-The test case here is based on the [carms guide](https://www.carms.ca/the-match/how-it-works/) to the matching algorithm. Print statement have been included as comments if you wish to run a "loud" version of the matching in order to show the search and recursive replacements as they happen.
+The test case here is based on the [Carms guide](https://www.carms.ca/the-match/how-it-works/) to the matching algorithm. Print statement have been included as comments if you wish to run a "loud" version of the matching in order to show the search and recursive replacements as they happen.
 
 ## Notes
 
