@@ -23,13 +23,17 @@ The test case here is based on the [Carms guide](https://www.carms.ca/the-match/
 
 ## Notes
 
-This implements the simple markets, applicant first version of the algorithm. The main differences from the full carms use is the lack of couples matching or second year entry.
+This implements the simple markets, applicant proposing version of the algorithm. The main differences from the full carms use is the lack of couples matching or second year entry.
 
 ## How it works
 
 The algorithm is based on the work of Alvin E. Roth and Elliot Peranson in their paper [__The Redesign of the Matching Market for American Physicians: Some Engineering Aspects of Economic Design__](https://web.stanford.edu/~alroth/papers/rothperansonaer.PDF) as well as previous work on matching markets by David Gale and Lloyd Shaply. Roth and Shapley jointly won the 2012 Nobel Prize in Economics "for the theory of stable allocations and the practice of market design"
 
-The goal is to form "Stable Matches" that is, no candidate and program wish they were matched with each other instead of their actual match. To do this both candidates and programs produce rank order lists of their preferences after which the algorithm progresses through each candidate, down their rank order list, temporarily matching them to the best program which wants them. As students are considered better matches, from the perspective of the program, may displace candidates with a temporary match in which case that candidate progresses down their remaining options potentially displacing others and so on until each students rank order list has been exhausted. At this point all students will either be matched to the best program they can be, relative to their competition, or will have failed to match entirely.
+The goal is to form "Stable Matches", that is, no candidate and program wish they were matched with each other instead of their actual match. 
+
+To do this both candidates and programs produce rank order lists of their preferences after which the algorithm progresses through each candidate, down their rank order list, temporarily matching them to their most preferred program which has also ranked them. 
+As students are considered, better matches, from the perspective of the program, may displace candidates with a temporary match in which case that candidate progresses down their remaining options potentially displacing others and so on until each students rank order list has been exhausted. 
+At this point all students will either be matched to the best program they can be, relative to their competition, or will have failed to match entirely.
 
 The design of the algorithm minimises the potential for strategic rank order lists, incentivising programs and applicants to state their true preferences.
 
