@@ -32,7 +32,9 @@ The algorithm is based on the work of Alvin E. Roth and Elliot Peranson in their
 The goal is to form "Stable Matches", that is, no candidate and program wish they were matched with each other instead of their actual match. 
 
 To do this both candidates and programs produce rank order lists of their preferences after which the algorithm progresses through each candidate, down their rank order list, temporarily matching them to their most preferred program which has also ranked them. 
+
 As students are considered, better matches, from the perspective of the program, may displace candidates with a temporary match in which case that candidate progresses down their remaining options potentially displacing others and so on until each students rank order list has been exhausted. 
+
 At this point all students will either be matched to the best program they can be, relative to their competition, or will have failed to match entirely.
 
 The design of the algorithm minimises the potential for strategic rank order lists, incentivising programs and applicants to state their true preferences.
@@ -41,7 +43,7 @@ Further work needs to be done on this implementation to support candidates with 
 
 ## Authors
 
-* **John Dirk Morrison** - *Research and Implementation* - [J-DM](https://github.com/J-DM)
+* **John Dirk Morrison** - *Research and Implementation* - Github: [J-DM](https://github.com/J-DM)
 
 ## Acknowledgements
 
