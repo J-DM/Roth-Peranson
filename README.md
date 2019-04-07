@@ -9,7 +9,7 @@ This is an unofficial Python implementation of the Nobel Prize winning algorithm
 
 ## Prerequisites
 
-This is largely standalone, the only requirement being pandas to manage the csv rank order lists.
+This is largely standalone, the only requirement being python 3 and pandas to manage the csv rank order lists.
 
 
 ```
