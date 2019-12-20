@@ -7,10 +7,11 @@ from match.RothPeranson import MatchController
 class ResultsTest(unittest.TestCase):
 
 	def test_final_results(self):
-		program_choices_test_data = pd.read_csv('./test/program_choices_test.csv')
-		candidate_choices_test_data = pd.read_csv('./test/candidate_choices_test.csv')
+		program_choices_test_data = './test/program_choices_test.csv'
+		candidate_choices_test_data = './test/candidate_choices_test.csv'
+		program_places_test_data = './test/program_places.csv'
 
-		test_match = MatchController(program_choices_test_data, candidate_choices_test_data)
+		test_match = MatchController(program_choices_test_data, candidate_choices_test_data, program_places_test_data)
 		test_match.start_match()
 		results = test_match.results_dict()
 
