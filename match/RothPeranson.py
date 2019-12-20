@@ -74,17 +74,22 @@ class MatchController():
 	# This class manages the processing of rank order lists for Students and Programs
 	# in addition to controlling the match process and returning the final results.
 
-    def __init__(self, program_data, candidate_data):
-    	# Takes data as pandas dataframes
+    def __init__(self, program_data, candidate_data, places_data=None):
+    	# Takes csv data directories
 
-        self.program_data = program_data
-        self.candidate_data = candidate_data
+        self.program_data = pd.read_csv(program_data)
+        self.candidate_data = pd.read_csv(candidate_data)
+        if places_data:
+            self.places_data = pd.read_csv(places_data, index_col=0)
 
         self.programs = {}
         self.candidates = {}
 
         for c in self.program_data.columns:
-            self.programs[c] = Program(c)
+            if places_data:
+                self.programs[c] = Program(c, self.places_data.loc[c].places)
+            else:
+                self.programs[c] = Program(c)
 
         for c in self.candidate_data.columns:
             choices = self.candidate_data[c].dropna().tolist()
