@@ -9,7 +9,7 @@ This is an unofficial Python implementation of the Nobel Prize winning algorithm
 
 ## Prerequisites
 
-This is largely standalone, the only requirement being python 3 and pandas to manage the csv rank order lists.
+This is largely standalone, the only requirement being Python 3 and pandas to manage the csv rank order lists.
 
 
 ```
@@ -27,7 +27,7 @@ This implements the simple markets, applicant proposing version of the algorithm
 
 ## How it works
 
-The algorithm is based on the work of Alvin E. Roth and Elliot Peranson in their paper [__The Redesign of the Matching Market for American Physicians: Some Engineering Aspects of Economic Design__](https://web.stanford.edu/~alroth/papers/rothperansonaer.PDF) as well as previous work on matching markets by David Gale and Lloyd Shaply. Roth and Shapley jointly won the 2012 Nobel Prize in Economics "for the theory of stable allocations and the practice of market design"
+The algorithm is based on the work of Alvin E. Roth and Elliot Peranson in their paper [__The Redesign of the Matching Market for American Physicians: Some Engineering Aspects of Economic Design__](https://web.stanford.edu/~alroth/papers/rothperansonaer.PDF) as well as previous work on matching markets by David Gale and Lloyd Shapley. Roth and Shapley jointly won the 2012 Nobel Prize in Economics "for the theory of stable allocations and the practice of market design"
 
 The goal is to form "Stable Matches", that is, no candidate and program wish they were matched with each other instead of their actual match. 
 

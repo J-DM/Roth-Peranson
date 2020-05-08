@@ -1,7 +1,7 @@
 import pandas as pd
 
 class Student():
-	# Class representing someone making an application.
+# Class representing someone making an application.
 
     # Commented out sections describe the process loudly
     def __init__(self, name, choices):
@@ -32,7 +32,7 @@ class Student():
         self.find_next()
         
 class Program():
-	# Class representing some program accepting total_places students
+# Class representing some program accepting total_places students
 
     def __init__(self, name, total_places=2):
         self.name = name
@@ -71,8 +71,8 @@ class Program():
         
         
 class MatchController():
-	# This class manages the processing of rank order lists for Students and Programs
-	# in addition to controlling the match process and returning the final results.
+# This class manages the processing of rank order lists for Students and Programs
+# in addition to controlling the match process and returning the final results.
 
     def __init__(self, program_data, candidate_data, places_data=None):
     	# Takes csv data directories
