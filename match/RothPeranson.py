@@ -34,7 +34,7 @@ class Student():
 class Program():
 # Class representing some program accepting total_places students
 
-    def __init__(self, name, total_places=2):
+    def __init__(self, name, total_places=1):
         self.name = name
         self.choices = []
         self.current_picks = []
@@ -123,4 +123,17 @@ class MatchController():
                 results_dict[k] = 'Did not match'
                 
         return results_dict
+
+    def get_output_csv(self):
+        results = self.results_dict()
+
+        results_df = pd.DataFrame.from_dict(
+            results,
+            orient='index'
+        )
+
+        results_df = results_df.reset_index()
+        results_df.columns = ['Candidate', 'Matched Program']
+        
+        results_df.to_csv('easy_match/results.csv', index=False)
 
