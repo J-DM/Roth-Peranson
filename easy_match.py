@@ -2,7 +2,9 @@ from match.RothPeranson import MatchController
 
 def run_match():
     print("This script uses the files in the easy_match folder.")
-    print("You can use them as templates, extending to however many programs/candidates are required.")
+    print(
+        "You can use them as templates, extending to however many programs/candidates are required."
+    )
     print("The filenames cannot be changed for this script.")
     print("\n")
 
