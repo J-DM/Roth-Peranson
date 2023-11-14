@@ -45,10 +45,6 @@ Further work needs to be done on this implementation to support candidates with 
 
 * **John Dirk Morrison** - *Research and Implementation* - Github: [J-DM](https://github.com/J-DM)
 
-## Acknowledgements
-
-Illustration - Pair-to-Pair by pedro baños cancer from the Noun Project
-
 ## Get in touch!
 
 You can reach me at john.dirk.morrison \[you know the thing\] gmail.com
