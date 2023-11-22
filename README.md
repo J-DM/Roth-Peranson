@@ -17,9 +17,11 @@ pip install pandas
 
 ```
 
+Tests can be run using `python -m unittest` in the root directory.
+
 ## Example
 
-The test case here is based on the [Carms guide](https://www.carms.ca/the-match/how-it-works/) to the matching algorithm. Print statement have been included as comments if you wish to run a "loud" version of the matching in order to show the search and recursive replacements as they happen.
+The test case here is based on the [Carms guide](https://www.carms.ca/the-match/how-it-works/) to the matching algorithm. Note that the example used in the test case is from a prior version of this page. Print statement have been included as comments if you wish to run a "loud" version of the matching in order to show the search and recursive replacements as they happen.
 
 ## Notes
 
